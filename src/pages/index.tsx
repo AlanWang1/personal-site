@@ -2,7 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
 type blog = {
   date: Date;
@@ -16,15 +16,36 @@ type blogProps = {
 
 export default function Home({ blogs }: blogProps) {
   return (
-    <div className={styles["container"]}>
-      <Head>
-        <title>Demo Blog</title>
-      </Head>
-      <h1 className={styles["header"]}>Welcome to my blog</h1>
-      <p className={styles["subtitle"]}>
-        This is a subtitle idk what to type here
-      </p>
-      <ul className={styles["blog-list"]}>
+    <body className="px-12">
+      <header className="flex flex-row m-auto pt-12">
+        <Image></Image>
+        <nav className="flex flex-row-reverse ml-auto">
+          <div className="ml-12"> Resume </div>
+          <div className="mx-12"> Writings</div>
+          <div className="mx-12"> Home </div>
+        </nav>
+      </header>
+      <main>
+        <section className="flex flex-row py-[30vh] m-auto max-w-7xl content-center items-center">
+          <section className="flex flex-col pr-14">
+            <h1 className="text-7xl">Hi, I'm Alan</h1>
+            <p>
+              I’m currently a Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore
+            </p>
+          </section>
+          <Image
+            src="/assets/Alan Wang.jpg"
+            width={300}
+            height={300}
+            alt="Picture of Alan Wang"
+            className="rounded-full"
+          ></Image>
+        </section>
+      </main>
+      {/* <ul className="flex flex-row">
         {blogs.map((blog) => (
           <li key={blog.slug}>
             <Link href={`/blog/${blog.slug}`}>
@@ -34,8 +55,9 @@ export default function Home({ blogs }: blogProps) {
             </Link>
           </li>
         ))}
-      </ul>
-    </div>
+      </ul> */}
+      <footer></footer>
+    </body>
   );
 }
 
