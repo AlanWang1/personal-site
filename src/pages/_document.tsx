@@ -1,9 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import test from "tailwindcss/";
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html className="text-ink font-serif">
         <Head>
           {/* Netlify Widget */}
           <script
