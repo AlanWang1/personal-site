@@ -3,7 +3,20 @@ import ReactMarkdown from "react-markdown";
 import matter from "gray-matter";
 import Head from "next/head";
 
-export default function Blog({ frontmatter, markdown }) {
+type BlogPost = {
+  frontmatter: {
+    [key: string]: any;
+  };
+  markdown: string;
+};
+
+type Slug = {
+  params: {
+    slug: string;
+  };
+};
+
+export default function Blog({ frontmatter, markdown }: BlogPost) {
   return (
     <div>
       <Head>
@@ -17,7 +30,7 @@ export default function Blog({ frontmatter, markdown }) {
   );
 }
 
-export async function getStaticProps({ params: { slug } }) {
+export async function getStaticProps({ params: { slug } }: Slug) {
   const fileContent = matter(
     fs.readFileSync(`./content/blogs/${slug}.md`, "utf8")
   );

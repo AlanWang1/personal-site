@@ -3,7 +3,7 @@ import test from "tailwindcss/";
 class MyDocument extends Document {
   render() {
     return (
-      <Html className="text-ink font-serif">
+      <Html className="text-ink font-serif bg-beige">
         <Head>
           {/* Netlify Widget */}
           <script

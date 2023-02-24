@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+import Layout from "@/components/layout";
 
 type blog = {
   date: Date;
@@ -16,29 +17,22 @@ type blogProps = {
 
 export default function Home({ blogs }: blogProps) {
   return (
-    <body className="px-12 bg-beige">
-      <header className="flex flex-row pt-12 max-w-4xl m-auto">
-        <nav className="flex flex-row-reverse ml-auto">
-          <div className="ml-12"> Resume </div>
-          <div className="mx-12"> Writings</div>
-          <div className="mx-12"> Home </div>
-        </nav>
-      </header>
-      <main className="max-w-4xl m-auto">
-        <section className="flex flex-row content-center items-center pt-24 pb-12">
+    <Layout>
+      <>
+        <section className="flex flex-row content-center items-center mb-12">
           <section className="flex flex-col pr-14">
             <h1 className="font-semibold pb-6 text-5xl">
               <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text">
                 {" "}
-                Hi, I'm Alan
+                Hi, I&apos;m Alan
               </span>{" "}
               👋
             </h1>
             <p className="pb-6">
-              I’m currently a Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore
+              I&apos;m currently a Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore
             </p>
             <p className="pb-6">
               Outside of work I like to Lorem ipsum dolor sit amet, consectetur
@@ -91,7 +85,7 @@ export default function Home({ blogs }: blogProps) {
           </div>
         </section>
         <section className="flex flex-col space-y-6 pb-12">
-          <h2 className="text-2xl font-semibold">Where I've been</h2>
+          <h2 className="text-2xl font-semibold">Where I&apos;ve been</h2>
           <a className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full">
             <Image
               src="/assets/cibc.svg"
@@ -154,7 +148,7 @@ export default function Home({ blogs }: blogProps) {
           </a>
         </section>
         <section className="flex flex-col space-y-6 pb-12">
-          <h2 className="text-2xl font-semibold"> Things I've built</h2>
+          <h2 className="text-2xl font-semibold"> Things I&apos;ve built</h2>
           <div className="grid md:grid-cols-3 gap-4">
             <a className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow">
               <Image
@@ -240,22 +234,8 @@ export default function Home({ blogs }: blogProps) {
             In the works (maybe include this){" "}
           </h2>
         </section>
-      </main>
-      {/* <ul className="flex flex-row">
-        {blogs.map((blog) => (
-          <li key={blog.slug}>
-            <Link href={`/blog/${blog.slug}`}>
-              <>
-                {blog.date}:{blog.title}
-              </>
-            </Link>
-          </li>
-        ))}
-      </ul> */}
-      <footer className="flex flex-row justify-center pt-12">
-        By Alan Wang 2023
-      </footer>
-    </body>
+      </>
+    </Layout>
   );
 }
 
