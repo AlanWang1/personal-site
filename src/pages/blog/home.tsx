@@ -17,7 +17,15 @@ export default function Home({ blogs }: blogProps) {
   return (
     <Layout>
       <section className="flex flex-col">
-        <h1 className="text-5xl font-semibold mb-12">Alan&apos;s Archives</h1>
+        <div className="flex flex-col pb-12">
+          <h1 className="font-semibold text-5xl">
+            <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text pb-6">
+              Alan&apos;s Archives
+            </span>
+          </h1>
+          <h2 className="text-2xl">Description</h2>
+        </div>
+
         <ul className="flex flex-col gap-6">
           {blogs.map((blog) => (
             <li key={blog.slug} className="">

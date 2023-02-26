@@ -2,6 +2,7 @@ import fs from "fs";
 import ReactMarkdown from "react-markdown";
 import matter from "gray-matter";
 import Head from "next/head";
+import Layout from "@/components/layout";
 
 type BlogPost = {
   frontmatter: {
@@ -18,15 +19,21 @@ type Slug = {
 
 export default function Blog({ frontmatter, markdown }: BlogPost) {
   return (
-    <div>
-      <Head>
-        <title>Demo Blog | {frontmatter.title}</title>
-      </Head>
-      <h1>{frontmatter.title}</h1>
-      <span>{frontmatter.date}</span>
-      <hr />
-      <ReactMarkdown>{markdown}</ReactMarkdown>
-    </div>
+    <Layout>
+      <div>
+        <div className="flex flex-col pb-12">
+          <h1 className="font-semibold text-5xl">
+            <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text pb-6">
+              My first Blog
+            </span>
+          </h1>
+          <h2 className="text-xl">{frontmatter.date}</h2>
+        </div>
+        <article className="text-ink prose-h1:text-3xl prose-h1:font-semibold prose-h2:text-2xl prose-h2:font-semibold prose-p:my-6">
+          <ReactMarkdown>{markdown}</ReactMarkdown>
+        </article>
+      </div>
+    </Layout>
   );
 }
 
