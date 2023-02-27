@@ -11,7 +11,7 @@ export default function Layout({ children }: Children) {
       <body className="px-12 bg-beige min-h-screen">
         <header className="flex flex-row pt-12 max-w-4xl m-auto">
           <nav className="flex flex-row-reverse ml-auto">
-            <Link className="ml-12" href="/Alan Wang Resume.pdf">
+            <Link className="ml-12" href="/resume.pdf">
               Resume
             </Link>
             <Link className="mx-12" href="/blog/home">
