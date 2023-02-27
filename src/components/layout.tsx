@@ -9,7 +9,7 @@ type Children = {
 export default function Layout({ children }: Children) {
   return (
     <>
-      <body className="bg-beige min-h-screen mx-12">
+      <body className="bg-beige min-h-screen mx-4">
         <header className="flex flex-row pt-12 max-w-4xl m-auto">
           <Navbar />
         </header>
