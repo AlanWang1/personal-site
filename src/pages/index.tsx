@@ -19,8 +19,8 @@ export default function Home({ blogs }: blogProps) {
   return (
     <Layout>
       <>
-        <section className="flex flex-row content-center items-center mb-12">
-          <section className="flex flex-col pr-14">
+        <section className="flex md:flex-row flex-col content-center items-center mb-12">
+          <section className="flex flex-col md:pr-14">
             <h1 className="font-semibold pb-6 text-5xl">
               <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text">
                 Hi, I&apos;m Alan
@@ -92,7 +92,7 @@ export default function Home({ blogs }: blogProps) {
               </Link>
             </div>
           </section>
-          <div className="drop-shadow-md">
+          <div className="drop-shadow-md order-first md:order-last mb-12 md:w-full w-1/2">
             <div className="rounded-full bg-gradient-to-r from-blue to-green p-1.5">
               <Image
                 src="/images/Alan Wang.jpg"
