@@ -1,10 +1,9 @@
 ---
 title: Another Test blog
-date: February 24, 2023 1:17 PM
+date: February 24, 2023
 ---
+
 H﻿ello this is another test blog
-
-
 
 W﻿ith some test text
 

@@ -39,11 +39,10 @@ export default function Home({ blogs }: blogProps) {
               ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore
             </p>
-            <div className="flex flex-row fill-ink space-x-2">
-              <a href="https://github.com/AlanWang1">
+            <div className="flex flex-row space-x-2">
+              <a href="https://github.com/AlanWang1" className="fill-ink">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="ionicon"
                   viewBox="0 0 512 512"
                   width="20"
                   height="20"
@@ -52,19 +51,23 @@ export default function Home({ blogs }: blogProps) {
                   <path d="M256 32C132.3 32 32 134.9 32 261.7c0 101.5 64.2 187.5 153.2 217.9a17.56 17.56 0 003.8.4c8.3 0 11.5-6.1 11.5-11.4 0-5.5-.2-19.9-.3-39.1a102.4 102.4 0 01-22.6 2.7c-43.1 0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1 1.4-14.1h.1c22.5 2 34.3 23.8 34.3 23.8 11.2 19.6 26.2 25.1 39.6 25.1a63 63 0 0025.6-6c2-14.8 7.8-24.9 14.2-30.7-49.7-5.8-102-25.5-102-113.5 0-25.1 8.7-45.6 23-61.6-2.3-5.8-10-29.2 2.2-60.8a18.64 18.64 0 015-.5c8.1 0 26.4 3.1 56.6 24.1a208.21 208.21 0 01112.2 0c30.2-21 48.5-24.1 56.6-24.1a18.64 18.64 0 015 .5c12.2 31.6 4.5 55 2.2 60.8 14.3 16.1 23 36.6 23 61.6 0 88.2-52.4 107.6-102.3 113.3 8 7.1 15.2 21.1 15.2 42.5 0 30.7-.3 55.5-.3 63 0 5.4 3.1 11.5 11.4 11.5a19.35 19.35 0 004-.4C415.9 449.2 480 363.1 480 261.7 480 134.9 379.7 32 256 32z" />
                 </svg>
               </a>
-              <a href="https://www.linkedin.com/in/alan-wang11/">
+              <a
+                href="https://www.linkedin.com/in/alan-wang11/"
+                className="fill-ink"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
                   width="20"
                   height="20"
-                  viewBox="0 0 448 512"
                 >
-                  {/*Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.*/}{" "}
-                  <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
                   <title>Logo Linkedin</title>
+                  {/* Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->*/}
+                  <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
                 </svg>
               </a>
-              <a href="mailto:alan.wang9018@gmail.com">
+
+              <a href="mailto:alan.wang9018@gmail.com" className="fill-ink">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -81,7 +84,7 @@ export default function Home({ blogs }: blogProps) {
           <div className="drop-shadow-md">
             <div className="rounded-full bg-gradient-to-r from-blue to-green p-1.5">
               <Image
-                src="/assets/Alan Wang.jpg"
+                src="/images/Alan Wang.jpg"
                 width={600}
                 height={600}
                 alt="Picture of Alan Wang"
@@ -97,7 +100,7 @@ export default function Home({ blogs }: blogProps) {
             className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full"
           >
             <Image
-              src="/assets/cibc.svg"
+              src="/images/cibc.svg"
               width={50}
               height={50}
               alt="Cibc Logo"
@@ -118,7 +121,7 @@ export default function Home({ blogs }: blogProps) {
             className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full"
           >
             <Image
-              src="/assets/pointclickcare.jpeg"
+              src="/images/pointclickcare.jpeg"
               width={50}
               height={50}
               alt="PointClickCare Logo"
@@ -141,7 +144,7 @@ export default function Home({ blogs }: blogProps) {
             className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full"
           >
             <Image
-              src="/assets/pbsc.png"
+              src="/images/pbsc.png"
               width={50}
               height={50}
               alt="PBSC Logo"
@@ -170,7 +173,7 @@ export default function Home({ blogs }: blogProps) {
               className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow"
             >
               <Image
-                src="/assets/nolaughingmatter.png"
+                src="/images/nolaughingmatter.png"
                 width={300}
                 height={300}
                 alt="No Laughing Matter Thumnnail"
@@ -192,7 +195,7 @@ export default function Home({ blogs }: blogProps) {
               className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow"
             >
               <Image
-                src="/assets/pythia.png"
+                src="/images/pythia.png"
                 width={300}
                 height={300}
                 alt="Pythia Thumbnail"
@@ -214,7 +217,7 @@ export default function Home({ blogs }: blogProps) {
               className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow"
             >
               <Image
-                src="/assets/aitomind.png"
+                src="/images/aitomind.png"
                 width={300}
                 height={300}
                 alt="Aitomind Thumbnail"
