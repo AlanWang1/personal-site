@@ -21,23 +21,27 @@ export default function Home({ blogs }: blogProps) {
       <>
         <section className="flex md:flex-row flex-col content-center items-center mb-12">
           <section className="flex flex-col md:pr-14">
-            <h1 className="font-semibold pb-6 text-5xl">
-              <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text">
+            <h1 className="font-semibold text-5xl">
+              <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text pb-6">
                 Hi, I&apos;m Alan
               </span>{" "}
               👋
             </h1>
             <p className="pb-6">
-              I&apos;m currently a Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore
+              Thanks for visiting my site! I&apos;m currently a 3rd year
+              Computer Science student at the University of Waterloo, looking to
+              explore avenues in
+              <span className="font-semibold"> software engineering</span>,
+              <span className="font-semibold"> distributed systems</span>, and
+              <span className="font-semibold"> tech for creatives</span>. As an
+              avid problem solver and builder, programming is one of my favorite
+              ways to bring ideas to life.
             </p>
             <p className="pb-6">
-              Outside of work I like to Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore
+              Besides programming, I enjoy producing music and playing my
+              guitar, electronic music has been a long time passion of mine. I
+              also love martial arts and I&apos;m currently having a lot of fun
+              learning muay thai.
             </p>
             <div className="flex flex-row space-x-2.5">
               <a href="https://github.com/AlanWang1" className="fill-ink">

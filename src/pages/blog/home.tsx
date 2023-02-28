@@ -23,7 +23,7 @@ export default function Home({ blogs }: blogProps) {
               Alan&apos;s Archives
             </span>
           </h1>
-          <h2 className="text-2xl">Description</h2>
+          <h2 className="text-2xl">My digital thinking space</h2>
         </div>
 
         <ul className="flex flex-col gap-6">
