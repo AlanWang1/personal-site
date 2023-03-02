@@ -2,6 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import Link from "next/link";
 import Layout from "@/components/layout";
+import Head from "next/head";
 
 type blog = {
   date: Date;
@@ -15,29 +16,34 @@ type blogProps = {
 
 export default function Home({ blogs }: blogProps) {
   return (
-    <Layout>
-      <section className="flex flex-col">
-        <div className="flex flex-col pb-12">
-          <h1 className="font-semibold text-5xl">
-            <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text pb-6">
-              Alan&apos;s Archives
-            </span>
-          </h1>
-          <h2 className="text-2xl">My digital thinking space</h2>
-        </div>
+    <>
+      <Head>
+        <title>Alan's Archives</title>
+      </Head>
+      <Layout>
+        <section className="flex flex-col">
+          <div className="flex flex-col pb-12">
+            <h1 className="font-semibold text-5xl">
+              <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text pb-6">
+                Alan&apos;s Archives
+              </span>
+            </h1>
+            <h2 className="text-2xl">My digital thinking space</h2>
+          </div>
 
-        <ul className="flex flex-col gap-6">
-          {blogs.map((blog) => (
-            <li key={blog.slug} className="">
-              <Link href={`/blog/${blog.slug}`} className="flex flex-col">
-                <p className="text-xl font-semibold">{blog.title}</p>
-                <p>{blog.date.toString()}</p>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+          <ul className="flex flex-col gap-6">
+            {blogs.map((blog) => (
+              <li key={blog.slug} className="">
+                <Link href={`/blog/${blog.slug}`} className="flex flex-col">
+                  <p className="text-xl font-semibold">{blog.title}</p>
+                  <p>{blog.date.toString()}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </Layout>
+    </>
   );
 }
 
