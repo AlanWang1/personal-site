@@ -1,6 +1,6 @@
 ---
 title: Test Blog!
-date: February 20, 2023 12:00 AM
+date: February 20, 2023
 ---
 # Hello!
 
