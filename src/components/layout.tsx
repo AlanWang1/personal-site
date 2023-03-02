@@ -9,14 +9,14 @@ type Children = {
 export default function Layout({ children }: Children) {
   return (
     <>
-      <body className="bg-beige min-h-screen mx-6">
+      <div className="bg-beige min-h-screen mx-6">
         <header className="flex flex-row pt-12 max-w-4xl m-auto">
           <Navbar />
         </header>
         <main className="max-w-4xl m-auto md:mt-24 mt-12 mb-12">
           {children}
         </main>
-      </body>
+      </div>
       <footer className="flex flex-col items-center mb-6 mx-12">
         <p>Made with 🫶</p>
         <p>By Alan Wang © 2023</p>

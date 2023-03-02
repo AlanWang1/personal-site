@@ -42,8 +42,8 @@ export default function Home({ blogs }: blogProps) {
                 favorite ways to bring ideas to life.
               </p>
               <p className="pb-6">
-                Besides programming, I enjoy producing music and playing my
-                guitar, electronic music has been a long time passion of mine. I
+                Besides programming, I enjoy playing my guitar and producing
+                music, electronic music has been a longtime passion of mine. I
                 also love martial arts and I&apos;m currently having a lot of
                 fun learning muay thai.
               </p>
@@ -210,28 +210,6 @@ export default function Home({ blogs }: blogProps) {
                 </div>
               </a>
               <a
-                href="https://devpost.com/software/pythia-p09zyj"
-                className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow"
-              >
-                <Image
-                  src="/images/pythia.png"
-                  width={300}
-                  height={300}
-                  alt="Pythia Thumbnail"
-                  className="object-cover w-full rounded-t-lg "
-                ></Image>
-                <div className="pt-4 px-4 flex flex-col justify-between leading-normal">
-                  <div className="flex flex-row ">
-                    <h5 className="mb-2 text-xl font-medium tracking-tight">
-                      Pythia
-                    </h5>
-                  </div>
-                  <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400">
-                    Google Photos and Cloud Vision AI powered fortune teller
-                  </p>
-                </div>
-              </a>
-              <a
                 href="https://devpost.com/software/aitomind"
                 className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow"
               >
@@ -250,6 +228,28 @@ export default function Home({ blogs }: blogProps) {
                   </div>
                   <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400">
                     Generated mindmaps for educational videos
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://devpost.com/software/pythia-p09zyj"
+                className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow"
+              >
+                <Image
+                  src="/images/pythia.png"
+                  width={300}
+                  height={300}
+                  alt="Pythia Thumbnail"
+                  className="object-cover w-full rounded-t-lg "
+                ></Image>
+                <div className="pt-4 px-4 flex flex-col justify-between leading-normal">
+                  <div className="flex flex-row ">
+                    <h5 className="mb-2 text-xl font-medium tracking-tight">
+                      Pythia
+                    </h5>
+                  </div>
+                  <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Google Photos and Cloud Vision AI powered fortune teller
                   </p>
                 </div>
               </a>

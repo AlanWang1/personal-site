@@ -16,6 +16,21 @@ class MyDocument extends Document {
             href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐢</text></svg>"
             type="image/svg+xml"
           />
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="title" content="Alan Wang" />
+          <meta
+            name="description"
+            content="Alan Wang is a developer and computer science student at the University of Waterloo, passionate about software engineering, distributed systems, and tech for creatives"
+          />
+
+          <meta property="og:title" content="Alan Wang" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://alanwang.xyz" />
+          <meta
+            property="og:description"
+            content="Alan Wang is a developer and computer science student at the University of Waterloo, passionate about software engineering, distributed systems, and tech for creatives"
+          />
         </Head>
         <body>
           <Main />
