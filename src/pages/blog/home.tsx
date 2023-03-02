@@ -18,7 +18,7 @@ export default function Home({ blogs }: blogProps) {
   return (
     <>
       <Head>
-        <title>Alan's Archives</title>
+        <title>Alan&apos;s Archives</title>
       </Head>
       <Layout>
         <section className="flex flex-col">
