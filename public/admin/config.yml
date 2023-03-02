@@ -20,6 +20,7 @@ collections:
           widget: "datetime",
           date_format: "DD.MM.YYYY",
           time_format: false,
-          format: "LLL",
+          format: "MM-DD-YYYY",
+          picker_utc: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
