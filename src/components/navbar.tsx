@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="md:flex md:flex-row-reverse ml-auto">
+    <nav className="md:flex md:flex-row-reverse ml-auto font-sans">
       <div className="md:flex md:flex-row-reverse md:ml-auto hidden">
         <Link className="ml-12" href="/resume.pdf">
           Resume
@@ -38,9 +38,9 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -55,16 +55,16 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="close-menu hidden"
             >
               <line x1="18" y1="6" x2="6" y2="18"></line>
               <line x1="6" y1="6" x2="18" y2="18"></line>
             </svg>
           </button>
-          <div className="hidden mobile-menu flex flex-col gap-3">
+          <div className="hidden mobile-menu flex flex-col gap-3 font-serif">
             <Link href="/" className="ml-auto text-xl">
               Home
             </Link>

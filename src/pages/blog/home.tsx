@@ -23,20 +23,24 @@ export default function Home({ blogs }: blogProps) {
       <Layout>
         <section className="flex flex-col">
           <div className="flex flex-col pb-12">
-            <h1 className="font-semibold text-5xl">
+            <h1 className="font-semibold md:text-5xl text-4xl">
               <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text pb-6">
                 Alan&apos;s Archives
               </span>
             </h1>
-            <h2 className="text-2xl">My digital thinking space</h2>
+            <h2 className="md:text-2xl text-xl font-serif">
+              My digital thinking space
+            </h2>
           </div>
 
           <ul className="flex flex-col gap-6">
             {blogs.map((blog) => (
               <li key={blog.slug} className="">
                 <Link href={`/blog/${blog.slug}`} className="flex flex-col">
-                  <p className="text-xl font-semibold">{blog.title}</p>
-                  <p>{blog.date.toString()}</p>
+                  <p className="text-xl font-semibold font-sans">
+                    {blog.title}
+                  </p>
+                  <p className="font-sans">{blog.date.toString()}</p>
                 </Link>
               </li>
             ))}

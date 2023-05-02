@@ -25,12 +25,12 @@ export default function Blog({ frontmatter, markdown }: BlogPost) {
           <div className="flex flex-col pb-12">
             <h1 className="font-semibold text-5xl">
               <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text pb-6">
-                My first Blog
+                {frontmatter.title}
               </span>
             </h1>
             <h2 className="text-xl">{frontmatter.date}</h2>
           </div>
-          <article className="text-ink prose-h1:text-3xl prose-h1:font-semibold prose-h2:text-2xl prose-h2:font-semibold prose-p:my-6">
+          <article className="text-ink prose-h1:text-3xl prose-h1:font-semibold prose-h2:text-2xl prose-h2:font-semibold prose-p:my-6 prose-p:font-sans">
             <ReactMarkdown>{markdown}</ReactMarkdown>
           </article>
         </div>

@@ -17,7 +17,7 @@ export default function Layout({ children }: Children) {
           {children}
         </main>
       </div>
-      <footer className="flex flex-col items-center mb-6 mx-12">
+      <footer className="flex flex-col items-center mb-6 mx-12 font-sans">
         <p>Made with 🫶</p>
         <p>By Alan Wang © 2023</p>
       </footer>

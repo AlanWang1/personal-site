@@ -25,13 +25,13 @@ export default function Home({ blogs }: blogProps) {
         <>
           <section className="flex md:flex-row flex-col content-center items-center mb-12">
             <section className="flex flex-col md:pr-14">
-              <h1 className="font-semibold text-5xl">
-                <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text pb-6">
+              <h1 className="font-semibold md:text-5xl text-4xl">
+                <span className="inline-block text-white text-opacity-0 bg-gradient-to-r from-blue to-green bg-clip-text pb-6 font-serif">
                   Hi, I&apos;m Alan
                 </span>{" "}
                 👋
               </h1>
-              <p className="pb-6">
+              <p className="pb-6 font-sans">
                 Thanks for visiting my site! I&apos;m currently a 3rd year
                 Computer Science student at the University of Waterloo, looking
                 to explore avenues in
@@ -41,7 +41,7 @@ export default function Home({ blogs }: blogProps) {
                 an avid problem solver and builder, programming is one of my
                 favorite ways to bring ideas to life.
               </p>
-              <p className="pb-6">
+              <p className="pb-6 font-sans">
                 Besides programming, I enjoy playing my guitar and producing
                 music, electronic music has been a longtime passion of mine. I
                 also love martial arts and I&apos;m currently having a lot of
@@ -126,12 +126,14 @@ export default function Home({ blogs }: blogProps) {
                 className="mt-4 ml-4 rounded-lg md:m-2"
               ></Image>
               <div className="flex flex-col justify-between pt-4 px-4 leading-normal">
-                <p className="mb-2 text-xl font-medium tracking-tight">CIBC</p>
-                <p className="mb-2 md:mb-3 font-normal">
+                <p className="mb-2 text-xl font-medium font-sans font-semibold">
+                  CIBC
+                </p>
+                <p className="mb-2 md:mb-3 font-normal font-sans">
                   Backend Developer Intern
                 </p>
               </div>
-              <p className="mb-4 md:ml-auto md:my-auto md:mt-5 md:mr-4 ml-4">
+              <p className="mb-4 md:ml-auto md:my-auto md:mt-5 md:mr-4 ml-4 font-sans">
                 Jan 2023 - Apr 2023
               </p>
             </a>
@@ -147,14 +149,14 @@ export default function Home({ blogs }: blogProps) {
                 className="mt-4 ml-4 rounded-lg md:m-2"
               ></Image>
               <div className="flex flex-col justify-between pt-4 px-4 leading-normal">
-                <h5 className="mb-2 text-xl font-medium tracking-tight">
+                <h5 className="mb-2 text-xl font-medium tracking-tight font-sans font-semibold">
                   PointClickCare
                 </h5>
-                <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400 font-sans">
                   Software Engineering Intern
                 </p>
               </div>
-              <p className="mb-4 md:ml-auto md:my-auto md:mt-5 md:mr-4 ml-4">
+              <p className="mb-4 md:ml-auto md:my-auto md:mt-5 md:mr-4 ml-4 font-sans">
                 May 2022 - Aug 2022
               </p>
             </a>
@@ -171,15 +173,15 @@ export default function Home({ blogs }: blogProps) {
               ></Image>
               <div className="pt-4 px-4 flex flex-col justify-between leading-normal">
                 <div className="flex flex-row ">
-                  <h5 className="mb-2 text-xl font-medium tracking-tight">
+                  <h5 className="mb-2 text-xl font-medium tracking-tight font-sans font-semibold">
                     PBSC
                   </h5>
                 </div>
-                <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400">
+                <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400 font-sans">
                   Software Developer Intern
                 </p>
               </div>
-              <p className="mb-4 md:ml-auto md:my-auto md:mt-5 md:mr-4 ml-4">
+              <p className="mb-4 md:ml-auto md:my-auto md:mt-5 md:mr-4 ml-4 font-sans">
                 May 2021 - Aug 2021
               </p>
             </a>
@@ -200,11 +202,11 @@ export default function Home({ blogs }: blogProps) {
                 ></Image>
                 <div className="pt-4 px-4 flex flex-col justify-between leading-normal">
                   <div className="flex flex-row ">
-                    <h5 className="mb-2 text-xl font-medium tracking-tight">
+                    <h5 className="mb-2 text-xl font-medium tracking-tight font-sans font-semibold">
                       No Laughing Matter
                     </h5>
                   </div>
-                  <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400 font-sans">
                     Video chat game, powered by facial recognition and analysis
                   </p>
                 </div>
@@ -222,11 +224,11 @@ export default function Home({ blogs }: blogProps) {
                 ></Image>
                 <div className="pt-4 px-4 flex flex-col justify-between leading-normal">
                   <div className="flex flex-row ">
-                    <h5 className="mb-2 text-xl font-medium tracking-tight">
+                    <h5 className="mb-2 text-xl font-medium tracking-tight font-sans font-semibold">
                       Aitomind
                     </h5>
                   </div>
-                  <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400 font-sans">
                     Generated mindmaps for educational videos
                   </p>
                 </div>
@@ -244,11 +246,11 @@ export default function Home({ blogs }: blogProps) {
                 ></Image>
                 <div className="pt-4 px-4 flex flex-col justify-between leading-normal">
                   <div className="flex flex-row ">
-                    <h5 className="mb-2 text-xl font-medium tracking-tight">
+                    <h5 className="mb-2 text-xl font-medium tracking-tight font-sans font-semibold">
                       Pythia
                     </h5>
                   </div>
-                  <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <p className="mb-2 md:mb-3 font-normal text-gray-700 dark:text-gray-400 font-sans">
                     Google Photos and Cloud Vision AI powered fortune teller
                   </p>
                 </div>
@@ -259,7 +261,7 @@ export default function Home({ blogs }: blogProps) {
             <h2 className="text-2xl font-semibold">In the works</h2>
             <a
               href="https://github.com/AlanWang1/generative-music-project-v2"
-              className="text-green underline"
+              className="text-green underline font-sans"
             >
               Ambient Soundscape Generator
             </a>

@@ -9,7 +9,8 @@ module.exports = {
       green: "#54B079",
     },
     fontFamily: {
-      serif: ['"Lora"', "serif"],
+      sans: ["Open Sans", "sans"],
+      serif: ["Merriweather", "serif"],
     },
     extend: {
       // typography: (theme) => ({
