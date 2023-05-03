@@ -103,7 +103,7 @@ export default function Home({ blogs }: blogProps) {
             <div className="drop-shadow-md order-first md:order-last mb-12 md:w-full w-1/2">
               <div className="rounded-full bg-gradient-to-r from-blue to-green p-1.5">
                 <Image
-                  src="/images/Alan Wang.jpg"
+                  src="/images/alanwang.jpg"
                   width={600}
                   height={600}
                   alt="Picture of Alan Wang"
