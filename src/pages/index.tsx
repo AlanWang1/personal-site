@@ -190,7 +190,7 @@ export default function Home({ blogs }: blogProps) {
             <h2 className="text-2xl font-semibold"> Things I&apos;ve built</h2>
             <div className="grid md:grid-cols-3 gap-4">
               <a
-                href="https://devpost.com/software/no-laughing-matter"
+                href="https://github.com/AlanWang1/No-Laughing-Matter"
                 className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow"
               >
                 <Image
@@ -212,7 +212,7 @@ export default function Home({ blogs }: blogProps) {
                 </div>
               </a>
               <a
-                href="https://devpost.com/software/aitomind"
+                href="https://github.com/AlanWang1/aitomind"
                 className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow"
               >
                 <Image
@@ -234,7 +234,7 @@ export default function Home({ blogs }: blogProps) {
                 </div>
               </a>
               <a
-                href="https://devpost.com/software/pythia-p09zyj"
+                href="https://github.com/AlanWang1/pythia/"
                 className="flex flex-col bg-white rounded-lg hover:drop-shadow-lg drop-shadow"
               >
                 <Image
