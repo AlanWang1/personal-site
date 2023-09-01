@@ -35,17 +35,17 @@ export default function Home({ blogs }: blogProps) {
                 Thanks for visiting my site! I&apos;m currently a 3rd year
                 Computer Science student at the University of Waterloo, looking
                 to explore avenues in
-                <span className="font-semibold"> software engineering</span>,
+                <span className="font-semibold"> backend engineering</span>,
                 <span className="font-semibold"> distributed systems</span>, and
-                <span className="font-semibold"> tech for creatives</span>. As
-                an avid problem solver and builder, programming is one of my
+                <span className="font-semibold"> cloud computing</span>. As an
+                avid problem solver and builder, programming is one of my
                 favorite ways to bring ideas to life.
               </p>
               <p className="pb-6 font-sans">
                 Besides programming, I enjoy playing my guitar and producing
                 music, electronic music has been a longtime passion of mine. I
                 also love martial arts and I&apos;m currently having a lot of
-                fun learning muay thai.
+                fun practicing muay thai.
               </p>
               <div className="flex flex-row space-x-2.5">
                 <a href="https://github.com/AlanWang1" className="fill-ink">
@@ -114,6 +114,29 @@ export default function Home({ blogs }: blogProps) {
           </section>
           <section className="flex flex-col space-y-6 pb-12">
             <h2 className="text-2xl font-semibold">Where I&apos;ve been</h2>
+            <a
+              href="https://www.manulife.com/"
+              className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full"
+            >
+              <Image
+                src="/images/manulife.png"
+                width={50}
+                height={50}
+                alt="Manulife Logo"
+                className="mt-4 ml-4 rounded-lg md:m-2"
+              ></Image>
+              <div className="flex flex-col justify-between pt-4 px-4 leading-normal">
+                <p className="mb-2 text-xl font-medium font-sans font-semibold">
+                  Manulife
+                </p>
+                <p className="mb-2 md:mb-3 font-normal font-sans">
+                  Cloud Engineering Intern
+                </p>
+              </div>
+              <p className="mb-4 md:ml-auto md:my-auto md:mt-5 md:mr-4 ml-4 font-sans">
+                Sept 2023 - Dec 2023
+              </p>
+            </a>
             <a
               href="https://www.cibc.com/en/personal-banking.html"
               className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full"
