@@ -32,7 +32,7 @@ export default function Home({ blogs }: blogProps) {
                 👋
               </h1>
               <p className="pb-6 font-sans">
-                Thanks for visiting my site! I&apos;m currently a 3rd year
+                Thanks for visiting my site! I&apos;m currently a 4th year
                 Computer Science student at the University of Waterloo, looking
                 to explore avenues in
                 <span className="font-semibold"> backend engineering</span>,
