@@ -115,6 +115,29 @@ export default function Home({ blogs }: blogProps) {
           <section className="flex flex-col space-y-6 pb-12">
             <h2 className="text-2xl font-semibold">Where I&apos;ve been</h2>
             <a
+              href="https://assetflo.com/"
+              className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full"
+            >
+              <Image
+                src="/images/assetflo.png"
+                width={50}
+                height={50}
+                alt="Assetflo Logo"
+                className="mt-4 ml-4 rounded-lg md:m-2"
+              ></Image>
+              <div className="flex flex-col justify-between pt-4 px-4 leading-normal">
+                <p className="mb-2 text-xl font-medium font-sans font-semibold">
+                 Assetflo 
+                </p>
+                <p className="mb-2 md:mb-3 font-normal font-sans">
+                  Full Stack Developer Intern
+                </p>
+              </div>
+              <p className="mb-4 md:ml-auto md:my-auto md:mt-5 md:mr-4 ml-4 font-sans">
+                May 2024 - Aug 2024
+              </p>
+            </a>
+            <a
               href="https://www.manulife.com/"
               className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full"
             >
