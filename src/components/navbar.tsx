@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="md:flex md:flex-row-reverse ml-auto font-sans">
       <div className="md:flex md:flex-row-reverse md:ml-auto hidden">
-        <Link className="ml-12" href="/resume.pdf">
+        <Link className="ml-12" href="/pdf/resume.pdf">
           Resume
         </Link>
         <Link className="mx-12" href="/blog/home">

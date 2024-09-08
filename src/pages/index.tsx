@@ -32,19 +32,17 @@ export default function Home({ blogs }: blogProps) {
                 👋
               </h1>
               <p className="pb-6 font-sans">
-                Thanks for visiting my site! I&apos;m currently a 4th year
-                Computer Science student at the University of Waterloo, looking
-                to explore avenues in
+                Thanks for visiting my site! I&apos;m currently a senior studying
+                Computer Science at the University of Waterloo, looking to further my software engineering experience with a focus in 
                 <span className="font-semibold"> backend engineering</span>,
                 <span className="font-semibold"> distributed systems</span>, and
                 <span className="font-semibold"> cloud computing</span>. As an
-                avid problem solver and builder, programming is one of my
-                favorite ways to bring ideas to life.
+                avid problem solver and builder, programming is my
+                favorite way to bring ideas to life.
               </p>
               <p className="pb-6 font-sans">
-                Besides programming, I enjoy playing my guitar and producing
-                music, electronic music has been a longtime passion of mine. I
-                also love martial arts and I&apos;m currently having a lot of
+                Besides programming, I enjoy playing my guitar, producing
+                music and DJing. I also love martial arts and have had a lot of
                 fun practicing muay thai.
               </p>
               <div className="flex flex-row space-x-2.5">
@@ -75,7 +73,7 @@ export default function Home({ blogs }: blogProps) {
                   </svg>
                 </a>
 
-                <a href="mailto:alan.wang9018@gmail.com" className="fill-ink">
+                <a href="mailto:alan.wang2@uwaterloo.ca" className="fill-ink">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512"
@@ -87,7 +85,7 @@ export default function Home({ blogs }: blogProps) {
                     <title>Logo Email</title>
                   </svg>
                 </a>
-                <Link href="/resume.pdf" className="fill-ink">
+                <Link href="/pdf/resume.pdf" className="fill-ink">
                   <svg
                     width="20"
                     height="20"
@@ -114,6 +112,29 @@ export default function Home({ blogs }: blogProps) {
           </section>
           <section className="flex flex-col space-y-6 pb-12">
             <h2 className="text-2xl font-semibold">Where I&apos;ve been</h2>
+            <a
+              href="https://www.capitalone.com/"
+              className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full"
+            >
+              <Image
+                src="/images/capitalone.jpg"
+                width={50}
+                height={50}
+                alt="Capital One Logo"
+                className="mt-4 ml-4 rounded-lg md:m-2"
+              ></Image>
+              <div className="flex flex-col justify-between pt-4 px-4 leading-normal">
+                <p className="mb-2 text-xl font-medium font-sans font-semibold">
+                 Capital One
+                </p>
+                <p className="mb-2 md:mb-3 font-normal font-sans">
+                  Software Engineering Intern
+                </p>
+              </div>
+              <p className="mb-4 md:ml-auto md:my-auto md:mt-5 md:mr-4 ml-4 font-sans">
+                Sept 2024 - Dec 2024
+              </p>
+            </a>
             <a
               href="https://assetflo.com/"
               className="flex flex-col md:items-center bg-white rounded-lg hover:drop-shadow-lg drop-shadow md:flex-row md:max-w-xl min-w-full"

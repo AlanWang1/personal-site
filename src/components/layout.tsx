@@ -19,7 +19,7 @@ export default function Layout({ children }: Children) {
       </div>
       <footer className="flex flex-col items-center mb-6 mx-12 font-sans">
         <p>Made with 🫶</p>
-        <p>By Alan Wang © 2023</p>
+        <p>By Alan Wang © 2024</p>
       </footer>
     </>
   );
